@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  background-color: #000;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Красивая кнопка */
+.btn {
+  padding: 15px 35px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #ff66b2, #ff3385);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 0 25px rgba(255, 102, 178, 0.7);
+  transition: transform 0.2s, box-shadow 0.2s;
+  z-index: 100;
+}
+
+.btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 35px rgba(255, 102, 178, 0.9);
+}
+
+/* Оверлей с котиком */
+.cat-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 50;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.cat-gif {
+  width: 260px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(255, 105, 180, 0.6);
+}
+
+.kiss-text {
+  color: #ff99cc;
+  font-size: 26px;
+  font-weight: 600;
+  margin-top: 15px;
+  text-shadow: 0 0 10px #ff66b2;
+}
+
+/* Контейнер сердца и фото */
+.wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.center-image-container {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  border-radius: 0; /* Квадратное фото */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 30px rgba(255, 105, 180, 0.8);
+  z-index: 10;
+}
+
+.center-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ui {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.love {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+/* ВОТ ЗДЕСЬ МЕНЯЕТСЯ ШРИФТ ДЛЯ «i love you» */
+.love_word {
+  color: #ff99cc;
+  font-family: 'Great Vibes', cursive; /* Рукописный красивый шрифт */
+  font-size: 22px; /* Сделали шрифт чуть крупнее, так как он рукописный */
+  text-shadow: 0 0 8px #ff66b2, 0 0 15px #ff3385;
+  white-space: nowrap;
+}
+
+.hidden {
+  display: none !important;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

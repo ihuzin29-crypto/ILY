@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Heart Animation</title>
+    <!-- Подключаем красивый шрифт Great Vibes и Montserrat из Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Кнопка запуска -->
+    <button id="startBtn" class="btn">Нажми меня! 🐱❤️</button>
+
+    <!-- Котик при нажатии (проверьте имя файла вашей гифки/картинки котика) -->
+    <div id="catOverlay" class="cat-overlay hidden">
+        <img src="kotik.jpg" alt="Котик" class="cat-gif">
+        <p class="kiss-text">Мур-мэк! 💋</p>
+    </div>
+
+    <!-- Основной контейнер с сердцем и фото (проверьте имя вашего главного фото) -->
+    <div id="mainContent" class="wrapper hidden">
+        <div class="center-image-container">
+            <img src="photochka.jpg" alt="Center Photo" class="center-image">
+        </div>
+        <div class="ui" id="ui"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
